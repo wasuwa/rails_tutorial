@@ -8,7 +8,7 @@ Bundler.require(*Rails.groups)
 
 module SampleApp
   class Application < Rails::Application
-    onfig.autoload_paths += Dir[Rails.root.join('app', 'uploaders')]
+    config.autoload_paths += Dir[Rails.root.join('app', 'uploaders')]
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
     
